@@ -5,11 +5,11 @@ import com.avenger.domains.entity.*;
 import java.util.*;
 
 public interface PostServices {
-    PostEntity createUpdateBook(String isbn, PostEntity postEntity);
+    PostEntity createUpdatePost(String isbn, PostEntity postEntity);
 
     List<PostEntity> findAll();
 
-    Optional<PostEntity> findOneBook(String isbn);
+    Optional<PostEntity> findOnePost(String isbn);
 
     boolean isExists(String isbn);
 

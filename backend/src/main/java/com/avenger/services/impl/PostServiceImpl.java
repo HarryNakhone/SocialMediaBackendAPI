@@ -18,7 +18,7 @@ public class PostServiceImpl implements PostServices {
 
     }
     @Override
-    public PostEntity createUpdateBook(String id, PostEntity postEntity) {
+    public PostEntity createUpdatePost(String id, PostEntity postEntity) {
         postEntity.setPostId(id);
         return postRepository.save(postEntity);
     }
@@ -29,7 +29,7 @@ public class PostServiceImpl implements PostServices {
     }
 
     @Override
-    public Optional<PostEntity> findOneBook(String isbn) {
+    public Optional<PostEntity> findOnePost(String isbn) {
         return postRepository.findById(isbn);
     }
 

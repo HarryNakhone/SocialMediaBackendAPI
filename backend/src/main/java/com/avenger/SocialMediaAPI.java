@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Log
-public class AvengerSocialApplication {
+public class SocialMediaAPI {
 
     public static void main(String[] args) {
-        SpringApplication.run(AvengerSocialApplication.class, args);
+        SpringApplication.run(SocialMediaAPI.class, args);
     }
 }
